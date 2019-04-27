@@ -10,35 +10,39 @@
     using namespace std;
 
     class person{
+
         private:
         string nom[MAX];
         string prenom[MAX];
         int age[MAX];
 
         public:
-        void remplissage(){
-       	    for(int j=0;j<n;j++){
-       	     cout<<"\nPERSON_"<<j+1<<" : "<<endl;
-       	  	 cout<<"Nom : "; cin>>nom[j];
-       	  	 cout<<"Prenom : "; cin>>prenom[j];
-       	  	 cout<<"Age : ";cin>>age[j];
-			    }
-	              }
-        void affichage(){
-       	   for(int j=0;j<n;j++){
-       	  	cout<<"\nPERSON_"<<j+1<<" : "<<endl;
-       	  	cout<<"Nom : "<<nom[j]<<endl;
-       	  	cout<<"Prenom : "<<prenom[j]<<endl;
-       	  	cout<<"Age : "<<age[j]<<endl;
-			        }
-			      }
+        void remplissage();
+        void affichage();
 
-	};
+	         };
 
+  void  person :: remplissage(){
+      for(int j=0;j<n;j++){
+       cout<<"\nPERSON_"<<j+1<<" : "<<endl;
+       cout<<"Nom : "; cin>>nom[j];
+       cout<<"Prenom : "; cin>>prenom[j];
+       cout<<"Age : ";cin>>age[j];
+                }
+                 }
+
+  void person :: affichage(){
+     for(int j=0;j<n;j++){
+      cout<<"\nPERSON_"<<j+1<<" : "<<endl;
+      cout<<"Nom : "<<nom[j]<<endl;
+      cout<<"Prenom : "<<prenom[j]<<endl;
+      cout<<"Age : "<<age[j]<<endl;
+             }
+              }
 
 int main(int argc, char** argv) {
 
-	 class person e;
+	  person e;
 
 	 // R�cuperer le nombre d'�tudiants;
 	 cout<<"veuillez saisir le nombre d'etudiants : ";
